@@ -21,7 +21,7 @@
 		}
 
 		.loading {
-			font-size: 3rem;
+			font-size: 1.5rem;
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -35,6 +35,12 @@
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			transition: .5s all cubic-bezier(0.6, -0.28, 0.735, 0.045);
+		}
+
+		@media screen and (min-width: 850px) {
+			.loading {
+				font-size: 3rem;
+			}
 		}
 
 		@keyframes bounce {
