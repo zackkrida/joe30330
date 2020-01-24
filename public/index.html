@@ -34,6 +34,7 @@
 			z-index: 4;
 			text-transform: uppercase;
 			letter-spacing: 2px;
+			transition: .5s all cubic-bezier(0.6, -0.28, 0.735, 0.045);
 		}
 
 		@keyframes bounce {
@@ -51,7 +52,7 @@
 		}
 
 		.loading[data-visible="hidden"] {
-			display: none;
+			transform: translateY(100%) scale(.9);
 		}
 
 		.frame {
